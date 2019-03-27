@@ -1,0 +1,30 @@
+{
+  "extends": ["eslint:recommended", "prettier", "prettier/standard"],
+  "plugins": ["import", "prettier", "standard"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "object-curly-spacing": [2, "always"],
+    "comma-dangle": [2, "never"],
+    "arrow-spacing": 2,
+    "no-spaced-func": 2,
+    "require-yield": "off",
+    "semi": [2, "always"],
+    "space-infix-ops": 2,
+    "keyword-spacing": 2,
+    "no-multi-spaces": 2,
+    "no-useless-escape": "off",
+    "no-process-env": 2,
+    "prettier/prettier": 2,
+    "no-console": "off"
+  }
+}

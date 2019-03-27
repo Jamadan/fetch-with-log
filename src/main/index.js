@@ -1,5 +1,5 @@
-require("es6-promise").polyfill();
-require("isomorphic-fetch");
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
 
 export default args => {
   const { log } = args;
@@ -20,7 +20,7 @@ export default args => {
       return res;
     } catch (e) {
       if (consoleLog) {
-        console.log("ERROR CAUGHT IN FETCH WITH LOG");
+        console.log('ERROR CAUGHT IN FETCH WITH LOG');
       }
       throw e;
     }
