@@ -26,7 +26,7 @@ module.exports = api => {
       [
         "@babel/plugin-transform-runtime",
         {
-          corejs: true,
+          corejs: 3,
           helpers: true,
           regenerator: true,
           useESModules: false
