@@ -1,0 +1,10 @@
+coverage/
+lib/
+node_modules/
+.cache
+.env
+.eslintcache
+*.log
+.DS_Store
+.idea
+.npmrc

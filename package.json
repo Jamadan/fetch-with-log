@@ -6,6 +6,8 @@
   "module": "lib/module/index.js",
   "browser": "lib/browser/index.js",
   "scripts": {
+    "bump": "npm version patch",
+    "deploy": "npm run compile && npm publish",
     "compile": "rm -rf lib && npm run compile:browser && npm run compile:module && npm run compile:main",
     "compile:browser": "BABEL_ENV=module rollup -c ./rollup.config.js",
     "compile:module": "BABEL_ENV=module babel src --out-dir lib/module --source-maps --config-file ./babel.config.js",
