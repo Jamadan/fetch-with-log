@@ -1,6 +1,5 @@
-import es6 from "es6-promise";
-es6.polyfill();
-import "isomorphic-fetch";
+require("es6-promise").polyfill();
+require("isomorphic-fetch");
 
 class FetchLog {
   constructor(args) {
