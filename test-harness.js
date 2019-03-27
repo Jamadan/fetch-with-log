@@ -1,9 +1,9 @@
-import fetchWithLog from "./src";
+import fetchWithLog from './src';
 // OR
-// const fetchWithLog = require('fetch-with-log').default;
+// const fetchWithLog = require('./src').default;
 
-console.log("BEGIN");
-console.log("--------");
+console.log('BEGIN');
+console.log('--------');
 
 const log = args => {
   // do logging magic here
@@ -18,18 +18,18 @@ const log = args => {
   // UNCOMMENT HERE TO PRINT ARGS
   // console.log(args);
 
-  console.log("Passed log function");
+  console.log('Passed log function');
 };
 
 const fetch = fetchWithLog({ log });
 
 (async function init() {
-  const result = await fetch("https://www.google.com", {}).catch(e => {
-    console.log("ERROR");
+  const result = await fetch('https://www.google.com', {}).catch(e => {
+    console.log('ERROR');
     console.log(e);
   });
   // console.log(result);
 
-  console.log("COMPLETE");
-  console.log("--------");
+  console.log('COMPLETE');
+  console.log('--------');
 })();
