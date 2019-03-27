@@ -1,6 +1,6 @@
 {
   "name": "fetch-with-log",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Wrapper for fetch with a log function specified on instantiation",
   "main": "lib/main/index.js",
   "module": "lib/module/index.js",
