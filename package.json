@@ -10,7 +10,8 @@
     "compile": "rm -rf lib && npm run compile:browser && npm run compile:module && npm run compile:main",
     "compile:browser": "BABEL_ENV=module rollup -c ./rollup.config.js",
     "compile:module": "BABEL_ENV=module babel src --out-dir lib/module --source-maps --config-file ./babel.config.js",
-    "compile:main": "BABEL_ENV=main babel src --out-dir lib/main --source-maps --config-file ./babel.config.js"
+    "compile:main": "BABEL_ENV=main babel src --out-dir lib/main --source-maps --config-file ./babel.config.js",
+    "test": "node ./src/main/index.test.js"
   },
   "repository": {
     "type": "git",

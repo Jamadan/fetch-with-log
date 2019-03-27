@@ -1,3 +1,5 @@
+import es6 from "es6-promise";
+es6.polyfill();
 import "isomorphic-fetch";
 
 class FetchLog {
@@ -20,7 +22,9 @@ class FetchLog {
       }
       return res;
     } catch (e) {
-      console.log("ERROR CAUGHT IN FETCH WITH LOG");
+      if (consoleLog) {
+        console.log("ERROR CAUGHT IN FETCH WITH LOG");
+      }
       throw e;
     }
   }
