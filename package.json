@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/HartleyOriginalJam/fetch-with-log#readme",
   "dependencies": {
+    "core-js": "^3.0.0",
     "corejs": "^1.0.0",
     "es6-promise": "^4.2.6",
     "isomorphic-fetch": "^2.2.1"
