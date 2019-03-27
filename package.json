@@ -12,7 +12,8 @@
     "compile:module": "BABEL_ENV=module babel src --out-dir lib/module --source-maps --config-file ./babel.config.js",
     "compile:main": "BABEL_ENV=main babel src --out-dir lib/main --source-maps --config-file ./babel.config.js",
     "dev": "NODE_ENV=development && babel-node ./test-harness",
-    "test": "jest --config=./jest-config.json"
+    "test": "jest --config=./jest-config.json",
+    "test-watch": "jest --config=./jest-config.json --watch"
   },
   "repository": {
     "type": "git",
