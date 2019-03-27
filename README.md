@@ -8,7 +8,7 @@ npm install fetch-with-log
 
 # Usage example
 
-```javascript
+```
 import fetchWithLog from 'fetch-with-log');
 // OR
 // const fetchWithLog = require('fetch-with-log').default;
