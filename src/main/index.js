@@ -5,7 +5,7 @@ class FetchLog {
     this.log = args.log;
   }
 
-  async fetchWithLog(url, options, consoleLog = false) {
+  async fetch(url, options, consoleLog = false) {
     const startTime = Date.now();
     try {
       const res = await fetch(url, options);
