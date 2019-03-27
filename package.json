@@ -11,7 +11,8 @@
     "compile:browser": "BABEL_ENV=module rollup -c ./rollup.config.js",
     "compile:module": "BABEL_ENV=module babel src --out-dir lib/module --source-maps --config-file ./babel.config.js",
     "compile:main": "BABEL_ENV=main babel src --out-dir lib/main --source-maps --config-file ./babel.config.js",
-    "test": "node ./src/main/index.test.js"
+    "dev": "NODE_ENV=development && babel-node ./test-harness",
+    "test": "jest --config=./jest-config.json"
   },
   "repository": {
     "type": "git",
@@ -28,14 +29,13 @@
   },
   "homepage": "https://github.com/HartleyOriginalJam/fetch-with-log#readme",
   "dependencies": {
-    "core-js": "^3.0.0",
-    "corejs": "^1.0.0",
     "es6-promise": "^4.2.6",
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
     "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/plugin-proposal-decorators": "^7.3.0",
     "@babel/plugin-proposal-export-default-from": "^7.2.0",
@@ -53,6 +53,7 @@
     "@babel/register": "^7.0.0",
     "@babel/runtime": "^7.3.1",
     "fs-extra": "^7.0.1",
+    "jest": "^24.5.0",
     "rollup": "^1.2.2",
     "rollup-plugin-analyzer": "^3.0.0",
     "rollup-plugin-babel": "^4.3.2",

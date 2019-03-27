@@ -1,0 +1,5 @@
+{
+  "testRegex": "(/src/)(.+)\\.test\\.js$",
+  "rootDir": "./",
+  "collectCoverage": true
+}
