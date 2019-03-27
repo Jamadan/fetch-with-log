@@ -4,11 +4,11 @@ Creates a function which logs request and response from fetch into passed in fun
 
 # Installation
 
-npm install fetch-with-log
+`npm install fetch-with-log`
 
 # Usage example
 
-```
+```javascript
 import fetchWithLog from 'fetch-with-log');
 // OR
 // const fetchWithLog = require('fetch-with-log').default;

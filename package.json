@@ -5,6 +5,9 @@
   "main": "lib/main/index.js",
   "module": "lib/module/index.js",
   "browser": "lib/browser/index.js",
+  "contributors": [
+    "J Hartley <jamadandev@gmail.com> (https://github.com/HartleyOriginalJam)"
+  ],
   "scripts": {
     "deploy": "npm version patch && npm run compile && npm publish",
     "compile": "rm -rf lib && npm run compile:browser && npm run compile:module && npm run compile:main",
