@@ -1,4 +1,4 @@
-import fetch from "fetch";
+import "isomorphic-fetch";
 
 class FetchLog {
   constructor(args) {
@@ -20,7 +20,7 @@ class FetchLog {
       }
       return res;
     } catch (e) {
-      console.log("SOMETHING WENT WRONG IN PACKAGE");
+      console.log("ERROR CAUGHT IN FETCH WITH LOG");
       throw e;
     }
   }

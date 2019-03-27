@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/HartleyOriginalJam/fetch-with-log#readme",
   "dependencies": {
-    "fetch": "^1.1.0"
+    "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
