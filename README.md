@@ -26,7 +26,7 @@ const logFunc = args => {
   console.log('some log to analytics for example');
 };
 
-const fetch = fetcher({ log: logFunc });
+const fetch = fetchWithLog({ log: logFunc });
 
 (async function init() {
   const result = await fetch('https://www.google.com', {}).catch(e => {
